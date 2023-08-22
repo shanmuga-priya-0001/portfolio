@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            text-decoration: none;
+            font-family: Verdana;
+            
+        }
+        h1{
+            color: white;
+        }
+        .nav-bar
+        {
+            width: 100vw;
+            height: 10vh;
+            background-color: coral;
+            position: fixed;
+            
+        }
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;  
+            padding: 0%;          
+            margin: 0%;
+            position: relative;
+            top: -20%;
+        }
+        
+        li , a{
+            width: 70px;
+            color: black;
+        }
+        .text-d {
+            display: none;
+        }
+        div:focus
+        {
+          color: brown;
+        }
+        .closs
+        { 
+            display: none;
+            position: absolute;
+            left: 85%;
+            top: 30%;
+        }
+        @media (max-width:620px) {
+            ul {
+                position: relative;
+                top: 35px;
+                width: 50%;
+                left: 70%;
+                display: none;
+                text-align: center;
+                background-color: rgb(240, 205, 192);
+            }
+            li
+            {
+                margin-bottom: 20px;
+            }
+
+               .text-d {
+                display: block;
+                float: right;
+                position: relative;
+                top: -10px;
+                left: -10%;
+               
+            } 
+        }
+        @media (min-width:620px) {
+        img 
+        {
+            display: none;
+        }  
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="nav-bar">
+    <h1 class="hh">Qed</h1> 
+    <div id="text-d" class="text-d">
+        <img width="30px" height="30px" src="menu.png">   
+       </div>
+    <div class="closs" id="closs"><img  width="16px" height="16px" src="close.png"></div>
+    <ul class="bar" id="bar">
+        <li><a id="atag" href="">home</a></li>
+        <li><a id="atag" href="">product</a></li>
+        <li><a id="atag" href="">service</a></li>
+        <li><a id="atag" href="">Contact</a></li>
+    </ul>
+    
+    </div>
+</body>
+<script src="navbar.js"></script>
+</html>

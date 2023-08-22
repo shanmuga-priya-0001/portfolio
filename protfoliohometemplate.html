@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+    <style>
+.gradient_bg {
+	background: linear-gradient(-45deg, #0c1022, #0c1022, #0c1022, #0c1022);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+.gradient_bg:hover{
+   -webkit-animation: gradient 15s ease infinite;
+   animation: gradient 5s ease infinite;
+}
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+body{
+    margin: 0%;
+            padding: 0%;
+}
+.welcome-section
+        {
+            
+            position: absolute;
+            /*background-color: #fff;*/
+            color:aliceblue;
+           /* background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);*/
+            top: 70px;
+            width:90%;
+            height:70%;
+            font-family: 'Poppins', sans-serif;
+            z-index: 2;
+        }
+        .f-size
+       {
+        font-size: 5vw;
+       }
+       .border
+       {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:column;
+            position: absolute;
+            background-color: #fff;
+            color:darkslategrey;
+           /* background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);*/
+            top: 125px;
+            width:71%;
+            height:71%;
+            left:15%;
+            position: relative;
+            background: rgba(0, 0, 0, 0.75);
+            border-radius: 20px;    
+            overflow: hidden;
+            
+       }
+       .border::before
+       {
+            content: '';
+            position: absolute;
+            width: 1800px;
+            height: 1800px;
+            background-image: conic-gradient(transparent,transparent,transparent,#b6e0eb );
+            animation: animate 4s linear infinite;
+       }
+       .border::after
+        {
+            content: '';
+            position: absolute;
+            width: 1800px;
+            height: 1800px;
+            background-image: conic-gradient(transparent,transparent,transparent,#ee78ee );
+            animation: animate 4s linear infinite;
+            animation-delay: -2s;
+        }
+       @keyframes animate
+        {
+            0%
+            {
+                transform: rotate(0deg);
+            }
+            100%
+            {
+                transform: rotate(360deg);
+            }
+
+        }
+        .border span
+        {
+            position: absolute;
+            inset: 2px;
+            border-radius: 16px;
+            background-color:#0c1022;
+            z-index: 1;
+        }
+        .me
+        {
+            position: absolute;
+            width: 135px;
+            height: 140px;
+            top:10%;
+            left:10%;
+            border-radius: 50%;
+            z-index: 3;
+        }
+        .me1
+        {
+            position: absolute;
+            width: 135px;
+            height: 140px;
+            top:12%;
+            left:13%;
+            border-radius: 50%;
+            background-color: #1a203d;
+            z-index: 2; 
+        }
+        h1{
+            font-size: 3vw;
+            width: 90vh;
+        }
+        h2{
+            font-size: 1.5vw;
+        }
+        p
+        {
+            font-weight: lighter;
+            font-size: 1vw;
+        }
+        .navbar
+        {
+            width:100%;
+            height: 55px;
+            position:fixed;
+            z-index: 1999;
+            top:0%;
+            
+        }
+       
+        .navlink
+        {
+           display: flex;
+           justify-content: flex-end;
+          
+        }
+        li{display: inline-flex;
+            justify-content: space-evenly;
+           left:110px;
+        }
+        .alink ,a 
+        {
+            position: relative;
+            width: 105px;
+           text-decoration: none;
+          font-weight: bold;
+           font-size: larger;
+           color:aliceblue;
+        }
+        .resume
+        {
+            position: absolute;
+            width: 20vw;
+            height: 190px;
+            top: 15%;
+            left: 70%;
+            background-color: #12162b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .resume-b
+        {
+            width:65%;
+            height: 24%;
+            background-color: #0c1022;
+            border-color:#b6e0eb;
+            color:#b6e0eb;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="gradient_bg">
+    <div class="navbar">
+        <ul class="navlink">
+            <li ><a class="alink" href="#about">About</a></li>
+            <li ><a class="alink" href="#project">projects</a></li>
+            <li ><a class="alink" href="#contact">Contact</a></li>
+        </ul>
+        <div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div >
+        <img class="me" src="1685134172172.jpg" >
+        <div class="me1"></div>
+    </div>
+    <div class="border">
+        <span></span>
+    <div id="about" class="welcome-section">
+        <h1 class="About"> <p><𝓂𝑒>....</p> <div class="f-size"> Ｈ𝕖𝔂 </div> &nbsp;&nbsp;&nbsp;&nbsp; 𝐼'𝓂 𝓈𝒽𝒶𝓃𝓂𝓊𝑔𝒶 𝓅𝓇𝒾𝓎𝒶</h1>
+        <h2>𝓌𝑒𝒷 𝒹𝑒𝓈𝒾𝑔𝓃er ||
+          𝓌𝑒𝒷 𝒹𝑒𝓋𝑒𝓁𝑜𝓅𝑒𝓇</h2>
+        <p>my skills are...</p>
+        <p> .....<\𝓂𝑒></p>
+        <div class="resume">
+            <button class="resume-b"><a   href="Resume-5.pdf" title="" download>Resume</a></button>
+        </div>
+        
+    </div>
+</div>    
+</body>
+</html>

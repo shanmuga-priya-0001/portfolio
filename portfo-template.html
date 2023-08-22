@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shanmuga's protfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/>
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <style>
+        :root
+        {
+           --col1:rgb(28, 28, 85);
+        }
+        body
+        {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fcff;
+            background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
+        }
+        .navbar
+        {
+            width:100%;
+            height: 55px;
+            background-color: var(--col1);
+            position:fixed;
+            z-index: 1999;
+            top:0%;
+            
+        }
+        .navlink
+        {
+           display: flex;
+           justify-content: flex-end;
+          
+        }
+        li{display: inline-flex;
+            justify-content: space-evenly;
+           left:110px;
+        }
+        .alink ,a 
+        {
+            position: relative;
+            width: 105px;
+           text-decoration: none;
+          font-weight: bold;
+           font-size: larger;
+           color:aliceblue;
+        }
+        a{text-align: center;}
+        a:hover
+        {
+            color:rgb(140, 140, 211);
+           
+        }
+        .welcome-section
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:column;
+            position: absolute;
+            background-color: #182b3a;
+            background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
+            top: 125px;
+            width:70%;
+            height:70%;
+            left:15%;
+            font-family: 'Poppins', sans-serif;
+            color: aliceblue;
+            box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+           
+        }
+        h2{
+            font-style: italic;
+            font-weight: 300;
+           
+        }
+        .project
+        {
+        position: absolute;
+        top: 600px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+       width: 100%;
+         }
+         img{
+            width: 150px;
+            height: 160px;
+            border-radius: 100%;
+        
+         }
+        .img
+        {
+            width:350px;
+            height:300px;
+            border-radius: 10%
+        }
+        .pro-img
+        {
+            width:550px;
+            height:450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:column;
+           border-radius: 5% 10%  1% 10%;
+            background-size: cover;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #310e68;
+            background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+            margin-right: 0%;
+            margin-left: 5%;
+            
+            color: aliceblue;
+         }
+         
+        
+        .pro{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap:7%;
+        grid-row-gap:5%;
+        padding: 10px;
+        margin:auto;
+        width: 100%;
+        padding-top: 5%;
+        }
+
+        @media(max-width:35em)
+        {
+
+            .img{
+                width: 230px;
+                height: 220px;
+            }
+            img{width: 80px;
+            height: 90px;}
+            .pro
+            {
+                grid-template-columns: auto;
+              
+            }
+            .pro-img
+            {
+              width:330px;
+              height: 300px;
+              margin: 0%;
+              border: 0%;
+            }
+           .navbar
+           {
+            font-size: 12px;
+           }
+           .alink
+           {
+            padding: 10px  0px;
+           }
+           li{
+            margin-left: -20px;
+           }
+            .welcome-section{
+                height:35%;
+                font-size:xx-small;
+            }
+            .project
+            {
+                top:360px;
+            }
+            .contact{margin-top: 40%;
+            font-size: x-small;}
+
+       }
+       footer
+       {
+       width: 100%;
+        color:darkslategrey;
+        text-align: center;
+        background-color: var(--col1);
+        
+       }
+       hr
+       {border-color: #546E7A; /* Replace with your desired color */
+       border-width: 2px; 
+       width: 80%;
+       }
+       .contact
+       {
+        position: absolute;
+        color: rgb(35, 44, 17);
+     
+        text-align: center;
+        top:1980px;
+        width: 100%;
+        height: 50%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+        align-items: center;
+        
+        
+     
+       }
+       .f-size
+       {
+        font-size: 70px;
+       }
+       
+
+    </style>
+</head>
+<body >
+    <div class="navbar">
+        <ul class="navlink">
+            <li ><a class="alink" href="#about">About</a></li>
+            <li ><a class="alink" href="#project">projects</a></li>
+            <li ><a class="alink" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+   <div id="about" class="welcome-section">
+        <h1 class="About"><span class="f-size"> Ｈ𝕖𝔂 </span> 𝔦'𝔪 𝓈𝒽𝒶𝓃𝓂𝓊𝑔𝒶 𝓅𝓇𝒾𝓎𝒶</h1>
+        <h2>𝓌𝑒𝒷 𝒹𝑒𝓈𝒾𝑔𝓃 ||
+          𝓌𝑒𝒷 𝒹𝑒𝓋𝑒𝓁𝑜𝓅𝑒𝓇</h2>
+        <p>my skiles are...</p>
+    </div>
+    
+    <div id="project" class="project">
+        <h1>My projects</h1>     
+        <p>qjegwtewettwewtewuteiws</p>
+        <hr />
+        <div class="pro">       
+      <div class="pro-img"> 
+        <img class="img" src="Screenshot (160).png"  alt=""  />
+        <p></p>
+      <a href="">login</a>
+      <p>jagsdaigsdiuagd</p>
+      </div>  
+      <div class="pro-img"> 
+        <img class="img" src="Screenshot (160).png"  alt=""  />
+        <p></p>
+      <a href="">login</a>
+      <p>jagsdaigsdiuagd</p>
+      </div>
+      <div class="pro-img"> 
+        <img class="img" src="Screenshot (160).png"  alt=""  />
+        <p></p>
+      <a href="">login</a>
+      <p>jagsdaigsdiuagd</p>
+      </div>
+      <div class="pro-img"> 
+        <img class="img" src="Screenshot (160).png"  alt=""  />
+        <p></p>
+        <a href="">login</a>
+        <p>jagsdaigsdiuagd</p> 
+      </div>
+    </div>
+    </div></section>
+    
+    <div id="contact" class="contact">
+   <h1>contact</h1>
+   <img src="20221104_073719.jpg">
+   <h3>Name: shanmuga Priya</h3>
+   <h3>Email-id: @shanmu2505@gmail.com</h3>
+   <h3>phone: 9585973683</h3>
+   
+
+    <footer>
+        <p>
+             All the projects and contact details
+            given are  real.
+          </p>
+          <p><i class="fa-brands fa-facebook-f"></i>Facebook</p>
+
+    </footer>
+  </div>
+</body>
+</html>
